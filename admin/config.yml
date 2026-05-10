@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://ozlukasko-arch.github.io/web-lukasko
+  repo:ozlukasko-arch/web-lukasko
   branch: main
 
 media_folder: "images"
