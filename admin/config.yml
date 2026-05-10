@@ -3,14 +3,16 @@ backend:
   repo: ozlukasko-arch/web-lukasko
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "img" # Kam sa majú ukladať nahrané obrázky
+public_folder: "/img"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Stránky"
+    files:
+      - file: "index.html"
+        label: "Domovská stránka"
+        name: "index"
+        fields:
+          - {label: "Hlavný nadpis", name: "title", widget: "string"}
+          - {label: "Text o nás", name: "about_text", widget: "markdown"}
