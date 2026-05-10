@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: tvoje-meno/tvoj-repozitar # SEM NAPÍŠ SVOJU ADRESU (napr. lukasko/web)
+  repo: https://ozlukasko-arch.github.io/web-lukasko
   branch: main
 
 media_folder: "images"
