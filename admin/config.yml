@@ -1,18 +1,18 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: tvoje-meno/tvoj-repozitar # SEM NAPÍŠ SVOJU ADRESU (napr. lukasko/web)
   branch: main
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "stranka"
-    label: "Obsah stránky"
+  - name: "stranky"
+    label: "Stránky"
     files:
       - file: "index.html"
         label: "Hlavná stránka"
-        name: "home"
+        name: "index"
         fields:
-          - {label: "Hlavný nadpis", name: "nadpis", widget: "string"}
-          - {label: "Príbeh rodiny", name: "pribeh", widget: "markdown"}
-          - {label: "Cieľová suma", name: "suma", widget: "string"}
+          - {label: "Nadpis", name: "nadpis", widget: "string"}
+          - {label: "Príbeh", name: "pribeh", widget: "markdown"}
